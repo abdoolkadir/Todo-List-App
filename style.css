@@ -80,4 +80,16 @@ ul {
     margin-left: 10px;
 }
 
+/* Task Width */
+li p {
+    width: 86%;
+}
 
+/* Styling for edit and delete btn */
+.align-right a{
+    color: #fff;
+}
+
+.align-right a:hover{
+    color: #4e4e4e;
+}
