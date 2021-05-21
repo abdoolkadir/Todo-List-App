@@ -58,6 +58,9 @@ ul {
 }
 
 /* Tasks Lists */
+.task {
+    margin-right: 10px;
+}
 .tasks-list {
     width: 568px;
     display: flex;

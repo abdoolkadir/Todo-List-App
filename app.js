@@ -14,6 +14,7 @@ function loadEventListeners() {
     taskList.addEventListener('click', deleteTask);
     // Edit Task
     taskList.addEventListener('click', editTask)
+    //
 }
 
 // Add Task
@@ -57,6 +58,26 @@ function deleteTask(e) {
 // Edit/Update Task
 function editTask(e) {
     if(e.target.parentElement.classList.contains('edit-btn')){
+        const editable = e.target.parentElement.parentElement.parentElement;
+
+        // Get Task Text field
+        const p = editable.childNodes[3];
+
+        // Get p
+        p.contentEditable = true;
+
+        // Disable and save
+        // if(p.contentEditable == 'true'){
+        //     if(p.onFocus == 'true'){
+        //         console.log('yay')
+        //     }
+            // document.body.addEventListener('click', function(){
+            //     p.contentEditable = 'false';
+            // })
+        }
         
+        // console.log(editable);
     }
 }
+
+// console.log(taskList);
